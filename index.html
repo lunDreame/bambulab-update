@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRINTER UPDATE</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <!-- Input Section -->
+    <div class="section" id="inputSection">
+        <h1>PRINTER UPDATE</h1>
+        <input type="text" id="hostInput" placeholder="Printer Host">
+        <input type="text" id="accessCodeInput" placeholder="Printer Access Code">
+        <input type="text" id="deviceIdInput" placeholder="Printer SN">
+        <button onclick="sendMessageToServer()">Send</button>
+    </div>
+
+    <!-- Firmware Information Section -->
+    <div class="section" id="firmwareInfo">
+        <h2>Firmware Information</h2>
+        <p>Details of firmware information</p>
+    </div>
+
+    <!-- Upgrade Success Section -->
+    <div class="section" id="upgradeSuccess">
+        <h2>Upgrade Success</h2>
+        <p>Details of upgrade success</p>
+    </div>
+
+    <!-- Modal dialog -->
+    <div id="customConfirmModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="customConfirmMessage"></p>
+            <button id="confirmButton">Confirm</button>
+            <button id="cancelButton">Cancel</button>
+        </div>
+    </div>
+
+    <script src="scripts/index.js"></script>
+
+</body>
+
+</html>
